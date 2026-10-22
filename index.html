@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="陈雨的数字媒体艺术作品集，包含活动策划、墙贴设计与电子绘画技能展示。">
+  <title>你好，我是陈雨 · 数字媒体艺术</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- 顶部 -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Portfolio</p>
+      <h1>你好，我是<strong>陈雨</strong></h1>
+      <p class="subtitle">数字媒体艺术 · 视觉叙事 · 互动体验</p>
+      <p class="intro">用数字媒介连接创意与体验，关注活动策划、墙贴设计与电子绘画。</p>
+      <button id="hello" type="button">Say Hi</button>
+      <p id="message" class="message" aria-live="polite"></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 作品展示 -->
+    <section class="section" aria-labelledby="works-title">
+      <div class="section-head">
+        <span class="section-icon">🎨</span>
+        <div>
+          <p class="section-label">Selected Works</p>
+          <h2 id="works-title">作品展示</h2>
+        </div>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card">
+          <div class="work-visual">
+            <img src="./images/work1-zhongda.png" alt="中大国际活动策划：小红帽追踪计划森林调查中心现场">
+          </div>
+          <div class="work-content">
+            <h3>中大国际活动策划</h3>
+            <p>围绕商业空间与公众互动展开的活动策划，强调主题氛围、动线设计与现场体验。项目以“小红帽追踪计划”为主题，打造沉浸式森林调查中心场景。</p>
+            <ul class="tags">
+              <li>活动策划</li>
+              <li>空间体验</li>
+              <li>视觉传达</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-visual">
+            <img src="./images/work2-catcafe.png" alt="猫咖墙贴设计：B612猫咪会客厅">
+          </div>
+          <div class="work-content">
+            <h3>猫咖墙贴设计</h3>
+            <p>为猫咖空间设计墙贴视觉，结合猫咪形象、温暖配色与品牌氛围，提升空间识别度。项目以“B612猫咪会客厅”为主题，用插画营造轻松治愈的空间体验。</p>
+            <ul class="tags">
+              <li>墙贴设计</li>
+              <li>品牌视觉</li>
+              <li>插画应用</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 电子绘画 -->
+    <section class="section" aria-labelledby="skill-title">
+      <div class="section-head">
+        <span class="section-icon">✏️</span>
+        <div>
+          <p class="section-label">Digital Painting</p>
+          <h2 id="skill-title">电子绘画技能展示</h2>
+        </div>
+      </div>
+      <p class="skill-intro">使用数字绘画工具进行角色、场景与概念视觉创作，注重色彩氛围与画面叙事。</p>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./images/painting1.png" alt="电子绘画作品1">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/painting2.png" alt="电子绘画作品2">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/painting3.png" alt="电子绘画作品3">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/painting4.jpg" alt="电子绘画作品4">
+        </div>
+        <div class="gallery-item">
+          <img src="./images/painting5.jpg" alt="电子绘画作品5">
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="section contact-section" aria-labelledby="contact-title">
+      <div class="section-head">
+        <span class="section-icon">📮</span>
+        <div>
+          <p class="section-label">Get in Touch</p>
+          <h2 id="contact-title">联系我</h2>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <p class="contact-intro">欢迎交流合作，期待与你相遇。</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">电话</p>
+              <a href="tel:13174196057">131 7419 6057</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">邮箱</p>
+              <a href="mailto:2930229094@qq.com">2930229094@qq.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 陈雨 · 数字媒体艺术</p>
+  </footer>
+
+  <!-- 图片查看器 -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="关闭">&times;</button>
+    <button class="lightbox-prev" type="button" aria-label="上一张">&#10094;</button>
+    <button class="lightbox-next" type="button" aria-label="下一张">&#10095;</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
